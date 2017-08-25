@@ -40,7 +40,16 @@
   				document.body.className = "dark-mode";
   			}
   		};
+
+      document.querySelector(".navbar-link").onclick = function(){
+        let elToShow =
+      };
+
+      document.querySelector(".visible")
+
   	};
+
+    hide
   </script>
 
 </head>
@@ -61,80 +70,98 @@
 			<a href="https://github.com/dwelcheck"><i class="im im-github"></i></a>
         	<!-- <i class="im im-stackoverflow"></i> -->
         	<a href="https://www.linkedin.com/in/dwelcheck/"><i class="im im-linkedin"></i></a>
-	        <span>
 		        <a href="http://www.google.com/recaptcha/mailhide/d?k=01bexQdP-m8ZqlIpKPv0Jzfw==&amp;c=Jvk32DEAOGa42qYqUVLWGQ==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01bexQdP-m8ZqlIpKPv0Jzfw\x3d\x3d\x26c\x3dJvk32DEAOGa42qYqUVLWGQ\x3d\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">
 		        	<i class="im im-mail"></i>
 		        </a>
-	        </span>
 	  </section>
 
-	<h4><i class="im im-graduation-hat"></i>Education</h4>
-  	<div class="row">
-  		<div class="one-half column">
-  			<p>
-  				<b>Rochester Institute of Technology</b>
-  				<br>
-  				<i>Bachelor of Science</i>, Software Engineering
-  				<br>
-  				2015-2020
-  				</p>
-  		</div>
-  	</div>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#resume">Résumé</a>
+          </li>
+          <li>
+            <a class="navbar-link" href="#podcasts">Podcasts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-	<h4><i class="im im-certificate-o"></i>Skills</h4>
-  	<div class="row">
-  		<div class="two-thirds column">
-  			<p>
-  				<i>Programming Languages: </i> Python, Ruby, Java, Swift, C, SQL, HTML
-  				<br>
-  				<i>Operating Systems: </i> Microsoft Windows, macOS, Linux, iOS, Android
-  				<br>
-  				<i>Development & Project Management Tools: </i> Git, JetBrains IDEs, Xcode, Atlassian Suite 
-  				(Bitbucket, Confluence, Jira)
-  			</p>
-  		</div>
-  	</div>
 
-  	<h4><i class="im im-flask"></i>Projects</h4>
-  	<div class="row">
-  		<div class="column">
-  			<ul class="proj-list">
-  				<li>Built a Ruby command-line diet management system that stored the calorie count of 
-  					various foods and recipes.</li>
-  				<li>Created a simple health monitoring system in C that managed the storage and display 
-  					of readings in a finite, circular buffer.</li>
-  				<li>Built an interactive compiler using Java that traversed arithmetic expressions given in 
-  					a Lisp format, and converted them into basic machine instructions for a basic virtual machine, 
-  					where they were stored in registers and evaluated.</li>
-  				<li>Coordinated team project for a Django-based health management system that managed 
-  					healthcare personnel, as well as patient healthcare data.</li>
-  			</ul>
-  		</div>
-  	</div>
-  	
-  	<h4><i class="im im-flip-chart-o"></i>Experience</h4>
-  	<div class="row">
-  		<div class="column">
-  			<p>
-  				<b>IT Application Services Co-op</b>
-  				<br>
-  				Johnson & Johnson, Somerset, NJ
-  				<br>
-  				June 2017 - Present
-  			</p>
+  <div id="resume">
+  	<h4><i class="im im-graduation-hat"></i>Education</h4>
+    	<div class="row">
+    		<div class="one-half column">
+    			<p>
+    				<b>Rochester Institute of Technology</b>
+    				<br>
+    				<i>Bachelor of Science</i>, Software Engineering
+    				<br>
+    				2015-2020
+    				</p>
+    		</div>
+    	</div>
 
-  			<ul class="exp-list">
-  				<li>Developing and designing a reusable, scalable mobile automation framework for Android
-  				using the Appium and TestNG testing frameworks.</li>
-  				<li>Integrating of the above mobile automation framework with enterprise project management 
-  				and development tools, such as Jenkins CI, Atlassian Jira, and AWS Device Farm.</li>
-  				<li>Authoring technical documentation explaining the development, design rationale, 
-  				and use of the framework described above.</li>
-  				<li>Developing a customer-facing Confluence web portal for the IT Application Services Software 
-  				Engineering Excellence (ITAS SEE) department to detail its roles and responsibilities.</li>
-  			</ul>
-  		</div>
-  	</div>
+  	<h4><i class="im im-certificate-o"></i>Skills</h4>
+    	<div class="row">
+    		<div class="two-thirds column">
+    			<p>
+    				<i>Programming Languages: </i> Python, Ruby, Java, Swift, C, SQL, HTML
+    				<br>
+    				<i>Operating Systems: </i> Microsoft Windows, macOS, Linux, iOS, Android
+    				<br>
+    				<i>Development & Project Management Tools: </i> Git, JetBrains IDEs, Xcode, Atlassian Suite
+    				(Bitbucket, Confluence, Jira)
+    			</p>
+    		</div>
+    	</div>
+
+    	<h4><i class="im im-flask"></i>Projects</h4>
+    	<div class="row">
+    		<div class="column">
+    			<ul class="proj-list">
+    				<li>Built a Ruby command-line diet management system that stored the calorie count of
+    					various foods and recipes.</li>
+    				<li>Created a simple health monitoring system in C that managed the storage and display
+    					of readings in a finite, circular buffer.</li>
+    				<li>Built an interactive compiler using Java that traversed arithmetic expressions given in
+    					a Lisp format, and converted them into basic machine instructions for a basic virtual machine,
+    					where they were stored in registers and evaluated.</li>
+    				<li>Coordinated team project for a Django-based health management system that managed
+    					healthcare personnel, as well as patient healthcare data.</li>
+    			</ul>
+    		</div>
+    	</div>
+
+    	<h4><i class="im im-flip-chart-o"></i>Experience</h4>
+    	<div class="row">
+    		<div class="column">
+    			<p>
+    				<b>IT Application Services Co-op</b>
+    				<br>
+    				Johnson & Johnson, Somerset, NJ
+    				<br>
+    				June 2017 - Present
+    			</p>
+
+    			<ul class="exp-list">
+    				<li>Developing and designing a reusable, scalable mobile automation framework for Android
+    				using the Appium and TestNG testing frameworks.</li>
+    				<li>Integrating of the above mobile automation framework with enterprise project management
+    				and development tools, such as Jenkins CI, Atlassian Jira, and AWS Device Farm.</li>
+    				<li>Authoring technical documentation explaining the development, design rationale,
+    				and use of the framework described above.</li>
+    				<li>Developing a customer-facing Confluence web portal for the IT Application Services Software
+    				Engineering Excellence (ITAS SEE) department to detail its roles and responsibilities.</li>
+    			</ul>
+    		</div>
+    	</div>
+  </div>
+
+  <div id="podcasts">
+    <p>Look at me! I'm a podcast!</p>
   </div>
 
 <!-- End Document
